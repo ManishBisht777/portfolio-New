@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@sanity/cli": "^2.35.0"
+  }
+}
