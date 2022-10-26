@@ -444,7 +444,7 @@ nav {
 
 @media screen and (max-width: 900px) {
   .projects {
-    padding-top: 4rem;
+    padding: 4rem 0;
   }
 }
 .skills {
@@ -484,6 +484,11 @@ nav {
     width: 3rem;
     padding: 0.2rem;
     border: 0.1rem solid #e0e0e0;
+  }
+  .skills {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .contact {
@@ -615,6 +620,11 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  .socials {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .socialbx {
     width: 18rem;
     margin: 1rem;
