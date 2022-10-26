@@ -88,6 +88,43 @@ nav {
   width: fit-content;
 }
 
+.togglebtn {
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  color: #613583;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .togglebtn {
+    display: flex;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .togglebtn[aria-expanded=true] + .navlinks {
+    opacity: 0;
+    transform: translateX(-200vw);
+  }
+  .navlinks {
+    transform: translateX(0);
+    opacity: 1;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    right: 1rem;
+    height: 80vh;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home {
   display: flex;
   justify-content: center;
@@ -125,6 +162,38 @@ nav {
   margin-top: 2rem;
 }
 
+.homeimg {
+  width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    padding-top: 4rem;
+    margin: 1rem;
+  }
+  .homeinfo {
+    align-items: center;
+  }
+  .homeinfo h1 {
+    font-size: 2rem;
+  }
+  .homeimg {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home h1 {
+    font-size: 1.5rem;
+  }
+  .home p {
+    font-size: 0.75rem;
+  }
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
 .about {
   position: relative;
 }
@@ -152,6 +221,7 @@ nav {
   color: #1a5fb4;
   font-size: 2.5rem;
   display: flex;
+  align-items: center;
 }
 .info h2 img {
   width: 5rem;
@@ -269,6 +339,49 @@ nav {
   color: #636363;
 }
 
+.bx {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .basicinfo {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+  .eduinfo {
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .info {
+    max-width: 20rem;
+  }
+  .imgbx {
+    width: 80%;
+  }
+  .courseinfo {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .boxheading {
+    font-size: 1.5rem;
+  }
+  .boxheading img {
+    width: 3rem;
+  }
+  .info,
+.edubox {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    margin: 1rem;
+  }
+  .info h2,
+.edubox h2 {
+    font-size: 1.5rem;
+  }
+}
 .card {
   max-width: 15rem;
   background: #e0e0e0;
@@ -329,6 +442,11 @@ nav {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 900px) {
+  .projects {
+    padding-top: 4rem;
+  }
+}
 .skills {
   display: flex;
   justify-content: center;
@@ -348,6 +466,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .skillimg {
@@ -359,6 +479,13 @@ nav {
   box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
 }
 
+@media screen and (max-width: 900px) {
+  .skillimg {
+    width: 3rem;
+    padding: 0.2rem;
+    border: 0.1rem solid #e0e0e0;
+  }
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -371,7 +498,7 @@ nav {
 }
 
 .contactbx {
-  width: 60rem;
+  width: 50rem;
   padding: 4rem 2rem;
   border-radius: 0.5rem;
   border: 0.5rem solid #e0e0e0;
@@ -413,6 +540,16 @@ nav {
   gap: 0.5rem;
 }
 
+@media screen and (max-width: 500px) {
+  .contactbx {
+    width: 18rem;
+    margin: 1rem;
+    background-position: 10% center;
+  }
+  .contactbx h3 {
+    font-size: 1.25rem;
+  }
+}
 .socials {
   display: flex;
   justify-content: center;
@@ -425,7 +562,7 @@ nav {
 }
 
 .socialbx {
-  width: 60rem;
+  width: 50rem;
   padding: 4rem 2rem;
   border-radius: 0.5rem;
   border: 0.5rem solid #e0e0e0;
@@ -475,4 +612,15 @@ nav {
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: 4px 4px 8px #c38c09, -4px -4px 8px #ffbe0c;
+}
+
+@media screen and (max-width: 500px) {
+  .socialbx {
+    width: 18rem;
+    margin: 1rem;
+    background-position: 10% top;
+  }
+  .socialbx h3 {
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=main.css.map */

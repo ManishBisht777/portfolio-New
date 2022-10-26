@@ -39,6 +39,7 @@
     color: $blue;
     font-size: 2.5rem;
     display: flex;
+    align-items: center;
 
     img {
       width: 5rem;
@@ -159,5 +160,55 @@
     gap: 1rem;
     font-size: 1rem;
     color: $black;
+  }
+}
+
+.bx {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and(max-width:900px) {
+  .basicinfo {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+
+  .eduinfo {
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+
+  .info {
+    max-width: 20rem;
+  }
+
+  .imgbx {
+    width: 80%;
+  }
+
+  .courseinfo {
+    flex-direction: column;
+  }
+}
+
+@media screen and(max-width:500px) {
+  .boxheading {
+    font-size: 1.5rem;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  .info,
+  .edubox {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    margin: 1rem;
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 }

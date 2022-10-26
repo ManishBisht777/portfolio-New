@@ -43,3 +43,44 @@ nav {
   font-weight: 500;
   width: fit-content;
 }
+
+.togglebtn {
+  background: $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+  color: $primary;
+  display: none;
+}
+
+@media screen and(max-width:800px) {
+  .togglebtn {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .togglebtn[aria-expanded="true"] + .navlinks {
+    opacity: 0;
+    transform: translateX(-200vw);
+  }
+
+  .navlinks {
+    transform: translateX(0);
+    opacity: 1;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    right: 1rem;
+    height: 80vh;
+    background: $background;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

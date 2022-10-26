@@ -49,19 +49,27 @@ const About = () => {
           <div className="course">
             <h2 className="course__name">bsc h computer science</h2>
             <div className="courseinfo">
-              <img className="roundbtn" src={clock} alt="" />
-              <p>Keshav mahavidayalaya , delhi</p>
-              <img className="roundbtn" src={location} alt="" />
-              <p>may 2023</p>
+              <div className="bx">
+                <img className="roundbtn" src={location} alt="" />
+                <p>Keshav mahavidayalaya , delhi</p>
+              </div>
+              <div className="bx">
+                <img className="roundbtn" src={clock} alt="" />
+                <p>may 2023</p>
+              </div>
             </div>
           </div>
           <div className="course">
             <h2 className="course__name">bsc h computer science</h2>
             <div className="courseinfo">
-              <img className="roundbtn" src={clock} alt="" />
-              <p>Keshav mahavidayalaya , delhi</p>
-              <img className="roundbtn" src={location} alt="" />
-              <p>may 2023</p>
+              <div className="bx">
+                <img className="roundbtn" src={location} alt="" />
+                <p>Keshav mahavidayalaya , delhi</p>
+              </div>
+              <div className="bx">
+                <img className="roundbtn" src={clock} alt="" />
+                <p>may 2023</p>
+              </div>
             </div>
           </div>
         </div>
