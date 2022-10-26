@@ -1,0 +1,45 @@
+@use "../../styles/assets" as *;
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: $primary;
+  font-weight: 500;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navlinks li a {
+  color: $primary;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+
+  &:hover,
+  &:focus {
+    background: $background;
+    box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  }
+}
+
+.btn {
+  background: $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: $primary;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: fit-content;
+}

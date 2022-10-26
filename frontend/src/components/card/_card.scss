@@ -1,0 +1,44 @@
+@use "../../styles/assets" as *;
+
+.card {
+  max-width: 15rem;
+  //   background: $yellow;
+  background: $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  img {
+    border: 0.2rem solid $yellow;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.project__name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $blue;
+}
+
+.project__description {
+  font-size: 0.75rem;
+  color: $black;
+}
+
+.cardlink {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+  }
+}

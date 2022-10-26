@@ -1,0 +1,54 @@
+@use "../../styles/assets" as *;
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-transform: capitalize;
+}
+
+.contactbx {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.5rem solid $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+  background: url("../assets/pic2.png") no-repeat $primary;
+  background-position: 125% center;
+
+  h3 {
+    color: $background;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  p {
+    color: $background;
+    font-weight: 400;
+    font-size: 0.8rem;
+    max-width: 20rem;
+  }
+  button {
+    background: $primary;
+    box-shadow: 5px 5px 10px #44255c, -5px -5px 10px #7e45aa;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: $background;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: fit-content;
+  }
+}
+
+.iconbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

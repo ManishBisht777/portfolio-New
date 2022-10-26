@@ -1,0 +1,64 @@
+@use "../../styles/assets" as *;
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-transform: capitalize;
+}
+
+.socialbx {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.5rem solid $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+  background: url("../assets/girl.png") no-repeat $yellow;
+  background-position: 110% top;
+
+  h3 {
+    color: $darkblack;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  p {
+    color: $darkblack;
+    font-weight: 400;
+    font-size: 0.8rem;
+    max-width: 20rem;
+  }
+  button {
+    background: $yellow;
+    box-shadow: 5px 5px 10px #c38c09, -5px -5px 10px #ffbe0c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: $darkblack;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: fit-content;
+  }
+}
+
+.icon_bx {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow: 4px 4px 8px #c38c09, -4px -4px 8px #ffbe0c;
+}

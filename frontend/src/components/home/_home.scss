@@ -1,0 +1,40 @@
+@use "../../styles/assets" as *;
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: $background;
+  box-shadow: inset 5px 5px 10px #b5b5b5, inset -5px -5px 10px #ffffff;
+  margin: 2rem;
+}
+
+.homeinfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+
+  h1 {
+    font-size: 4rem;
+    background: #613583;
+    background: linear-gradient(to bottom left, #613583 0%, #8e4dbf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: $black;
+    font-weight: 500;
+    span {
+      color: $blue;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.homebtn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}

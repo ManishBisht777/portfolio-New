@@ -1,0 +1,20 @@
+@use "../../styles/assets" as *;
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 100vh;
+  min-width: 100%;
+  text-transform: capitalize;
+}
+
+.projects__wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  background: #e0e0e0;
+}

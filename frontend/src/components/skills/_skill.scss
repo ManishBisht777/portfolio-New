@@ -1,0 +1,31 @@
+@use "../../styles/assets" as *;
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-transform: capitalize;
+  background: url("../assets/skills.png") no-repeat $background;
+  background-position: 0% bottom;
+}
+
+.skillbx {
+  margin-top: 5rem;
+  max-width: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skillimg {
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 0.3rem solid $background;
+  background: $background;
+  box-shadow: 5px 5px 10px #b5b5b5, -5px -5px 10px #ffffff;
+}
