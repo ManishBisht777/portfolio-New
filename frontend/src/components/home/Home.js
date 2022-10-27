@@ -20,6 +20,7 @@ const Home = () => {
           <a
             className="btn iconbtn"
             target="_blank"
+            rel="noreferrer"
             href="https://drive.google.com/file/d/1ArM9fG7idIXL0j_sVAa7WnO0E5B0uCRK/view?usp=sharing"
           >
             Download CV <ion-icon name="download-outline"></ion-icon>

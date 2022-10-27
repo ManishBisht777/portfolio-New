@@ -49,6 +49,7 @@ const About = () => {
               <p className="desc">{aboutinfo.description}</p>
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://drive.google.com/file/d/1ArM9fG7idIXL0j_sVAa7WnO0E5B0uCRK/view?usp=sharing"
                 className="btn iconbtn"
               >

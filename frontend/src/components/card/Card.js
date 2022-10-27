@@ -11,10 +11,14 @@ const Card = ({ data }) => {
       <div className="project__name">{data.name}</div>
       <div className="project__description">{data.description}</div>
       <div className="cardlink">
-        <a target="_blank" href={data.github}>
+        <a target="_blank" rel="noreferrer" href={data.github}>
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a target="_blank" href={data.livelink ? data.livelink : "/"}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={data.livelink ? data.livelink : "/"}
+        >
           <ion-icon name="link-outline"></ion-icon>
         </a>
       </div>
