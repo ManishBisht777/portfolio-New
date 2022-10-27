@@ -17,8 +17,8 @@ function App() {
         <Home />
         <About />
         <Project />
-        <Skill />
         <Contact />
+        <Skill />
         <Socials />
       </main>
     </>
