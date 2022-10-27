@@ -7,6 +7,8 @@ import bag from "../../assets/bag.png";
 
 import { urlFor, client } from "../../client";
 
+//commit
+
 const About = () => {
   const [about, setabout] = useState([]);
   const [education, seteducation] = useState([]);
