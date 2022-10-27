@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { urlFor, client } from "../../client";
 
 const Socials = () => {
+  const [socials, setsocials] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "contacts"]';
+
+    client.fetch(query).then((data) => {
+      setsocials(data);
+    });
+  }, []);
+
   return (
     <section className="socials">
       <article className="socialbx">
         <h3>Socials</h3>
         <p>connect with me via various socials handles</p>
         <div className="icon_bx">
-          <a href="/" className="icon">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-
-          <a href="/" className="icon">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-
-          <a href="/" className="icon">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
+          {socials &&
+            socials.map((social) => (
+              <a href={social.url} className="icon" key={social.platform}>
+                <img src={urlFor(social.icon)} alt={social.platform} />
+              </a>
+            ))}
         </div>
       </article>
     </section>

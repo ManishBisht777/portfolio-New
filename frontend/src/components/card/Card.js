@@ -1,19 +1,18 @@
 import React from "react";
-import project1 from "../../assets/about04.png";
 
-const Card = () => {
+import { urlFor } from "../../client";
+
+const Card = ({ data }) => {
   return (
     <div className="card">
-      <img src={project1} alt="" />
-      <div className="project__name">some name</div>
-      <div className="project__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, unde.
-      </div>
+      <img src={urlFor(data.image)} alt="" />
+      <div className="project__name">{data.name}</div>
+      <div className="project__description">{data.description}</div>
       <div className="cardlink">
-        <a href="/">
+        <a href={data.github}>
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="/">
+        <a href={data.live ? data.live : "/"}>
           <ion-icon name="link-outline"></ion-icon>
         </a>
       </div>
