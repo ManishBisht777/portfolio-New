@@ -7,6 +7,8 @@ import Skill from "./components/skills/Skill";
 import Contact from "./components/contact/Contact";
 import Socials from "./components/social/Socials";
 
+// comment to trigger deploy
+
 function App() {
   return (
     <>
