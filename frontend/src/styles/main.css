@@ -81,7 +81,6 @@ nav {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   color: #613583;
-  text-transform: capitalize;
   font-weight: 500;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -123,6 +122,7 @@ nav {
     font-size: 1rem;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 }
 .home {
@@ -497,8 +497,8 @@ nav {
   align-items: center;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
   min-width: 100vw;
+  margin: 3rem 0;
   text-transform: capitalize;
 }
 
@@ -561,8 +561,8 @@ nav {
   align-items: center;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
   min-width: 100vw;
+  margin: 3rem 0;
   text-transform: capitalize;
 }
 

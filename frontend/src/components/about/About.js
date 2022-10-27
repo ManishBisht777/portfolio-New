@@ -46,7 +46,7 @@ const About = () => {
               </p>
               <p className="desc">{aboutinfo.description}</p>
               <a className="btn iconbtn" href="/">
-                download cv <ion-icon name="download-outline"></ion-icon>
+                Download CV <ion-icon name="download-outline"></ion-icon>
               </a>
             </div>
           </div>

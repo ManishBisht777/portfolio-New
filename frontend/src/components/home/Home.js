@@ -15,10 +15,10 @@ const Home = () => {
         </p>
         <div className="homebtn">
           <a className="btn" href="#about">
-            explore more
+            Explore More
           </a>
           <a className="btn iconbtn" href="/">
-            download cv <ion-icon name="download-outline"></ion-icon>
+            Download CV <ion-icon name="download-outline"></ion-icon>
           </a>
         </div>
       </article>

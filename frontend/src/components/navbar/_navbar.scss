@@ -39,7 +39,6 @@ nav {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   color: $primary;
-  text-transform: capitalize;
   font-weight: 500;
   width: fit-content;
 }
@@ -82,5 +81,6 @@ nav {
     font-size: 1rem;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 }
