@@ -16,7 +16,7 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2 className="boxheading">
         <img src={calander} alt="calander" /> projects
       </h2>
@@ -26,9 +26,9 @@ const Project = () => {
           projects.map((project) => <Card key={project.name} data={project} />)}
       </div>
 
-      <button className="btn iconbtn">
+      {/* <button className="btn iconbtn">
         <ion-icon name="barcode-outline"></ion-icon> Show more
-      </button>
+      </button> */}
     </section>
   );
 };

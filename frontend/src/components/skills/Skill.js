@@ -15,7 +15,7 @@ const Skill = () => {
   }, []);
 
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <h2 className="boxheading">
         <img src={tool} alt="tools and skills" /> skills and tools
       </h2>

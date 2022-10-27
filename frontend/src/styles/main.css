@@ -44,6 +44,10 @@ body {
   background: #e0e0e0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   padding: 2rem;
   display: flex;
@@ -390,14 +394,24 @@ nav {
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.card img {
+
+.card__img {
+  width: 100%;
+  height: 10rem;
+}
+.card__img img {
   border: 0.2rem solid #e5a50a;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project__name {
   font-size: 1rem;
+  margin: 0.5rem 0;
   font-weight: 500;
   color: #1a5fb4;
 }
@@ -617,6 +631,10 @@ nav {
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: 4px 4px 8px #c38c09, -4px -4px 8px #ffbe0c;
+}
+.icon img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {

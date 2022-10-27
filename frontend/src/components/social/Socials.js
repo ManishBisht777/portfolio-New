@@ -13,7 +13,7 @@ const Socials = () => {
   }, []);
 
   return (
-    <section className="socials">
+    <section className="socials" id="contact">
       <article className="socialbx">
         <h3>Socials</h3>
         <p>connect with me via various socials handles</p>

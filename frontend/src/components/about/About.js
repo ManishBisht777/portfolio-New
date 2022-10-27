@@ -27,7 +27,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       {about &&
         about.map((aboutinfo) => (
           <div className="basicinfo" key={aboutinfo.name}>
@@ -47,7 +47,11 @@ const About = () => {
                 age: <span>{aboutinfo.age}</span>
               </p>
               <p className="desc">{aboutinfo.description}</p>
-              <a className="btn iconbtn" href="/">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1ArM9fG7idIXL0j_sVAa7WnO0E5B0uCRK/view?usp=sharing"
+                className="btn iconbtn"
+              >
                 Download CV <ion-icon name="download-outline"></ion-icon>
               </a>
             </div>

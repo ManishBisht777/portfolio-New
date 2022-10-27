@@ -61,6 +61,11 @@
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: 4px 4px 8px #c38c09, -4px -4px 8px #ffbe0c;
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media screen and(max-width:500px) {

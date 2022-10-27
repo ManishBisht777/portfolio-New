@@ -8,16 +8,25 @@
   overflow: hidden;
   padding: 1rem;
   border-radius: 0.5rem;
+}
+
+.card__img {
+  width: 100%;
+  height: 10rem;
 
   img {
     border: 0.2rem solid $yellow;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .project__name {
   font-size: 1rem;
+  margin: 0.5rem 0;
   font-weight: 500;
   color: $blue;
 }

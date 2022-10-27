@@ -17,7 +17,11 @@ const Home = () => {
           <a className="btn" href="#about">
             Explore More
           </a>
-          <a className="btn iconbtn" href="/">
+          <a
+            className="btn iconbtn"
+            target="_blank"
+            href="https://drive.google.com/file/d/1ArM9fG7idIXL0j_sVAa7WnO0E5B0uCRK/view?usp=sharing"
+          >
             Download CV <ion-icon name="download-outline"></ion-icon>
           </a>
         </div>
