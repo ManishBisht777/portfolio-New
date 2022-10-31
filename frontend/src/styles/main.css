@@ -454,6 +454,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 70rem;
 }
 
 @media screen and (max-width: 900px) {
