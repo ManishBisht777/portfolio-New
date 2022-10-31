@@ -18,27 +18,39 @@ const Navbar = () => {
       </button>
       <ul className="navlinks">
         <li>
-          <a onClick={() => settoggle(false)} href="/">
+          <a aria-label="home" onClick={() => settoggle(false)} href="/">
             home
           </a>
         </li>
         <li>
-          <a onClick={() => settoggle(false)} href="#about">
+          <a aria-label="about" onClick={() => settoggle(false)} href="#about">
             about
           </a>
         </li>
         <li>
-          <a onClick={() => settoggle(false)} href="#projects">
+          <a
+            aria-label="projects"
+            onClick={() => settoggle(false)}
+            href="#projects"
+          >
             projects
           </a>
         </li>
         <li>
-          <a onClick={() => settoggle(false)} href="#skills">
+          <a
+            aria-label="skills"
+            onClick={() => settoggle(false)}
+            href="#skills"
+          >
             skills
           </a>
         </li>
         <li>
-          <a onClick={() => settoggle(false)} href="#contact">
+          <a
+            aria-label="contact"
+            onClick={() => settoggle(false)}
+            href="#contact"
+          >
             contact
           </a>
         </li>
