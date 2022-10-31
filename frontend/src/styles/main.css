@@ -108,7 +108,7 @@ nav {
   .logo {
     font-size: 1rem;
   }
-  .togglebtn[aria-expanded=true] + .navlinks {
+  .togglebtn[aria-expanded=false] + .navlinks {
     opacity: 0;
     transform: translateX(-200vw);
   }
